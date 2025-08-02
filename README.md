@@ -53,15 +53,15 @@ The Naive Bayes classifier achieved high accuracy and fast performance, making i
 ---
 
 ## 🖥️ Sample Code
-
+  
 ```python
-  from sklearn.feature_extraction.text import CountVectorizer
-  from sklearn.naive_bayes import MultinomialNB
-  from sklearn.pipeline import make_pipeline
-  from sklearn.model_selection import train_test_split
-  from sklearn.metrics import classification_report
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.pipeline import make_pipeline
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
 
-# Split data
+## Split data
 X_train, X_test, y_train, y_test = train_test_split(df['review'], df['sentiment'], test_size=0.2)
 
 # Create model pipeline
@@ -72,25 +72,23 @@ model.fit(X_train, y_train)
 preds = model.predict(X_test)
 print(classification_report(y_test, preds))
 
-📚 Learnings
 
-  Practical implementation of traditional NLP pipelines
+### 📚 Learnings
 
-  Importance of preprocessing and feature engineering
+- Practical implementation of traditional NLP pipelines  
+- Importance of preprocessing and feature engineering  
+- Building explainable models for sentiment analysis  
 
-  Building explainable models for sentiment analysis
 
-🚀 Future Improvements
+### 🚀 Future Improvements
 
-    Use pre-trained transformer models (like BERT)
+- Use pre-trained transformer models (like BERT)
+- Deploy the model as a web service
+-Extend classification to multi-class or aspect-based sentiment
 
-    Deploy the model as a web service
+### 📌 Status
 
-    Extend classification to multi-class or aspect-based sentiment
-
-📌 Status
-
-✅ Completed – This was the first task in the Elevvo NLP Internship.
+ ✅ Completed – This was the first task in the Elevvo NLP Internship.
 
 🔗 Project Link
 🔗 Kaggle ((https://www.kaggle.com/code/hanenebrahim/amazon-product-reviwes-sentiment-analysis/edit/run/248707546)
