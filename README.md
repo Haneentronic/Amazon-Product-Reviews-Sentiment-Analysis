@@ -73,6 +73,8 @@ preds = model.predict(X_test)
 print(classification_report(y_test, preds))
 
 
+```
+
 ### 📚 Learnings
 
 - Practical implementation of traditional NLP pipelines  
